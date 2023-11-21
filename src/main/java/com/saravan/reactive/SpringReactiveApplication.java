@@ -8,9 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-//@EnableSwagger2
-//@OpenAPIDefinition
-//@AutoConfigureBefore(DataSourceAutoConfiguration.class)
 public class SpringReactiveApplication {
 
 	public static void main(String[] args) {
@@ -20,7 +17,7 @@ public class SpringReactiveApplication {
 	@Bean
 	public CommandLineRunner runner(StudentRepository repository) {
 		return args -> {
-			for (int i = 0; i < 3000; i++) {
+			for (int i = 1; i < 1001; i++) {
 				repository.save(
 						Student.builder()
 								.firstname("Test" + i)
