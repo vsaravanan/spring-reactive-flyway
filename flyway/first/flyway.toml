@@ -1,0 +1,25 @@
+databaseType = "PostgreSql"
+name = "first"
+id = "836b06f7-47db-4d89-a744-20459987fa3c"
+
+[flywayDesktop]
+developmentEnvironment = "development"
+shadowEnvironment = "shadow"
+schemaModel = "./schema-model"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[redgateCompare.postgres.options.ignores]
+ignoreNewlinesInTextObjects = "off"
+
+[flyway]
+mixed = true
+outOfOrder = true
+locations = [ "filesystem:migrations" ]
+validateMigrationNaming = true
+
+[environments.flyway]
+url = "jdbc:postgresql://localhost:5432/jwt_security"
+schemas = [ "public" ]
+displayName = "flyway"
