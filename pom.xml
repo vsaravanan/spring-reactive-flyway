@@ -11,7 +11,7 @@
 	<groupId>com.govtech.viswa</groupId>
 	<artifactId>simple-reactive</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringReactive</name>
+	<name>SpringReactiveFlyway</name>
 	<description>Demo project for Spring Boot Reactive very simple</description>
 	<properties>
 		<java.version>21</java.version>
