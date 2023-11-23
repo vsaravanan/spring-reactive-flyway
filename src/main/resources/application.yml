@@ -1,5 +1,6 @@
-spring:
+server:
   port: 10100
+spring:
   r2dbc:
     url: r2dbc:pool:postgresql://saravanjs-ins:5432/jwt_security
     username: username
