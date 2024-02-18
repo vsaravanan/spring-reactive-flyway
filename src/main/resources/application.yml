@@ -21,7 +21,7 @@ spring:
 #springdoc.api-docs.enabled: true
 #springdoc.swagger-ui.enabled: true
 
-dirLog: /data/logs/spring-reactive
+dirLog: /data/logs/SpringReactiveFlyway
 
 logging:
   path: ${dirLog}
