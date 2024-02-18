@@ -2,12 +2,12 @@ server:
   port: 10100
 spring:
   r2dbc:
-    url: r2dbc:pool:postgresql://saravanjs-ins:5432/jwt_security
+    url: r2dbc:pool:postgresql://sjsdb:5432/jwt_security
     username: username
     password: password
   flyway:
     enabled: true
-    url: jdbc:postgresql://saravanjs-ins:5432/jwt_security
+    url: jdbc:postgresql://sjsdb:5432/jwt_security
     schemas: public
     user: username
     password: password
