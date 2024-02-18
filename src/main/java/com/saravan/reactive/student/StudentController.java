@@ -16,7 +16,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/api/v1/students")
+@RequestMapping("/api2/v1/students")
 @RequiredArgsConstructor
 public class StudentController {
 
