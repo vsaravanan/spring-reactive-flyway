@@ -2,12 +2,12 @@ server:
   port: 10100
 spring:
   r2dbc:
-    url: r2dbc:pool:postgresql://sjsdb:5432/sonar
+    url: r2dbc:pool:postgresql://sjsdb:5432/postgres
     username: sonar
     password: sonar
   flyway:
     enabled: true
-    url: jdbc:postgresql://sjsdb:5432/sonar
+    url: jdbc:postgresql://sjsdb:5432/postgres
     schemas: public
     user: sonar
     password: sonar
