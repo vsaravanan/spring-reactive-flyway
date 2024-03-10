@@ -2,15 +2,15 @@ server:
   port: 10100
 spring:
   r2dbc:
-    url: r2dbc:pool:postgresql://sjsdb:5432/postgres
-    username: username
-    password: password
+    url: r2dbc:pool:postgresql://sjsdb:5432/sonar
+    username: sonar
+    password: sonar
   flyway:
     enabled: true
-    url: jdbc:postgresql://sjsdb:5432/postgres
+    url: jdbc:postgresql://sjsdb:5432/sonar
     schemas: public
-    user: username
-    password: password
+    user: sonar
+    password: sonar
     driverClassName: org.postgresql.Driver
 #    outOfOrder: true
     baselineOnMigrate: true
