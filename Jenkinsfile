@@ -44,6 +44,12 @@ node {
       sh "mvn clean package install -T 1C"
     }
 
+    stage('SonarQube') {
+      withSonarQubeEnv() {
+        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
+      }
+    }
+
     stage('Package') {
       sh "cd ${jenkinsRoot}; pwd; tar -czf ${WORKSPACE}.tar.gz ${JOB_NAME}"
     }
