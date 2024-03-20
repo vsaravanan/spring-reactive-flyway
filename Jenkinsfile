@@ -80,7 +80,7 @@ node {
       body = "jenkins job SUCCESS \n job name : ${JOB_NAME} \n Version : ${appVer} \n Jenkins : " +
              "${BUILD_URL} \n  Commit Message : ${lastCommitMessage} "
       emailext body: body,
-                subject: "${appVer} was deployed SUCCESS",
+                subject: "jenkins job ${appVer} was deployed SUCCESS",
                 to: 'saravanan.resume@gmail.com',
                 from: 'jenkins'
     }
@@ -89,7 +89,7 @@ node {
     body = "jenkins job FAILED \n job name : ${JOB_NAME} \n Version : ${appVer} \n Jenkins : " +
            "${BUILD_URL} \n  Commit Message : ${lastCommitMessage} "
     emailext body: body,
-              subject: "${appVer} was deployed but FAILED" ,
+              subject: "jenkins job ${appVer} was deployed but FAILED" ,
               to: 'saravanan.resume@gmail.com',
               from: 'jenkins'
   }
