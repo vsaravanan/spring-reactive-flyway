@@ -76,6 +76,7 @@ node {
 
     stage('Email') {
       echo 'MVS job success'
+
       body = "jenkins job SUCCESS \n job name : ${JOB_NAME} \n Version : ${appVer} \n Jenkins : " +
              "${BUILD_URL} \n  Commit Message : ${lastCommitMessage} "
       emailext body: body,
